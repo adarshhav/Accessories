@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+{% block base %}
+    <h1 class="bg-dark text-light text-center">ACCESSORIES</h1>
+    <form class="ffrom" action="" method="post">
+      <h3>Login</h3>
+      {%csrf_token%}
+      <table class="table">
+        {{form.as_table}}
+      </table>
+      <div>
+        <button class="btn btn-success">Login</button>
+      </div>
+      <div class="go">New customer?<a href="{% url 'reg' %}">Register</a>
+    </form>
+    {% endblock base %}
+
+
+
+      
+    
